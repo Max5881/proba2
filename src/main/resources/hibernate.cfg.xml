@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/diplom?serverTimezone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">1234</property>
+
+        <property name="format_sql">true</property>
+        <property name="use_sql_comments">true</property>
+
+        <mapping class="ru.sapteh.Model.CertificateOfEducation"/>
+        <mapping class="ru.sapteh.Model.Curriculum"/>
+        <mapping class="ru.sapteh.Model.Diplom"/>
+        <mapping class="ru.sapteh.Model.Discipline"/>
+        <mapping class="ru.sapteh.Model.DisciplineCurriculum"/>
+        <mapping class="ru.sapteh.Model.Fpa"/>
+        <mapping class="ru.sapteh.Model.Gia"/>
+        <mapping class="ru.sapteh.Model.Grup"/>
+        <mapping class="ru.sapteh.Model.Oo"/>
+        <mapping class="ru.sapteh.Model.Passport"/>
+        <mapping class="ru.sapteh.Model.Practice"/>
+        <mapping class="ru.sapteh.Model.Specification"/>
+        <mapping class="ru.sapteh.Model.Status"/>
+        <mapping class="ru.sapteh.Model.Student"/>
+        <mapping class="ru.sapteh.Model.StudentDiscipline"/>
+        <mapping class="ru.sapteh.Model.StudentPractice"/>
+        <mapping class="ru.sapteh.Model.TypeOfEducationDocument"/>
+        <mapping class="ru.sapteh.Model.TypePractice"/>
+        <mapping class="ru.sapteh.Model.Kp"/>
+        <mapping class="ru.sapteh.Model.KpStudent"/>
+        <mapping class="ru.sapteh.Model.Mdk"/>
+        <mapping class="ru.sapteh.Model.Pm"/>
+        <mapping class="ru.sapteh.Model.SignIn"/>
+        
+    </session-factory>
+</hibernate-configuration>

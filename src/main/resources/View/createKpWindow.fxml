@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.Controller.CreateKpWindowController">
+   <children>
+      <Text layoutX="118.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Добавление курсового проекта">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="100.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Наименование">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text layoutX="108.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Число часов">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nameKpTextField" layoutX="278.0" layoutY="86.0" prefHeight="25.0" prefWidth="282.0" />
+      <TextField fx:id="hoursKpTextField" layoutX="278.0" layoutY="139.0" prefHeight="25.0" prefWidth="282.0" />
+      <Button fx:id="createKpButton" layoutX="393.0" layoutY="361.0" mnemonicParsing="false" text="Добавить" />
+      <Button fx:id="exitKpButton" layoutX="508.0" layoutY="361.0" mnemonicParsing="false" text="Выйти" />
+   </children>
+</AnchorPane>

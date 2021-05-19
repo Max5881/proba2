@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.Controller.loginWindowController">
+   <children>
+      <TableView fx:id="studentTableView" layoutY="21.0" prefHeight="368.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="21.0">
+        <columns>
+          <TableColumn fx:id="idStudent" prefWidth="35.0" text="№" />
+            <TableColumn fx:id="LFPStudent" prefWidth="148.0" text="Фамилия Имя Отчество" />
+            <TableColumn fx:id="birthday" minWidth="7.0" prefWidth="104.0" text="Дата рождения" />
+            <TableColumn fx:id="diplom" minWidth="8.0" prefWidth="74.0" text="Диплом" />
+            <TableColumn fx:id="regNumber" prefWidth="71.0" text="Рег.номер" />
+            <TableColumn fx:id="dateRes" prefWidth="98.0" text="Дата решения" />
+            <TableColumn fx:id="dataVid" prefWidth="69.0" text="Дата выдачи" />
+        </columns>
+      </TableView>
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Файл">
+            <items>
+              <MenuItem fx:id="createStudentMenuBar" mnemonicParsing="false" text="Создать карточку студента" />
+                  <MenuItem fx:id="closeMenuBar" mnemonicParsing="false" text="Закрыть" />
+                  <MenuItem fx:id="saveMenuBar" mnemonicParsing="false" text="Сохранить как..." />
+                  <MenuItem fx:id="exitMenuBar" mnemonicParsing="false" text="Выход" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Правка">
+            <items>
+              <MenuItem fx:id="updateMenuBar" mnemonicParsing="false" text="Редактировать запись..." />
+                  <MenuItem fx:id="shablonMenuBar" mnemonicParsing="false" text="Шаблон..." />
+                  <MenuItem fx:id="deleteMenuBar" mnemonicParsing="false" text="Удалить строки..." />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Отчеты">
+               <items>
+                  <MenuItem fx:id="diplomDifference" mnemonicParsing="false" text="Диплом СПО с отличием..." />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Сервис">
+               <items>
+                  <MenuItem fx:id="registrationNumberDiplomMenuBar" mnemonicParsing="false" text="Назначить регистрационные номера..." />
+                  <MenuItem fx:id="numberProtocolMenuBar" mnemonicParsing="false" text="Изменить номер протокола" />
+                  <MenuItem fx:id="dateDecisionMenuBar" mnemonicParsing="false" text="Изменить дату решения" />
+                  <MenuItem fx:id="dateOfIssuedMenuBar" mnemonicParsing="false" text="Изменить дату выдачи" />
+               </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Справка">
+               <items>
+                  <MenuItem fx:id="userGuideMenuBar" mnemonicParsing="false" text="Руководство пользователя..." />
+               </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

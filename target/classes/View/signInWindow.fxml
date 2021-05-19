@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="245.0" prefWidth="391.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.Controller.SignInWindowController">
+   <children>
+      <Pane prefHeight="245.0" prefWidth="397.0">
+         <children>
+            <Text layoutX="151.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Авторизация">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="68.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Логин">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="64.0" layoutY="138.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пароль">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField fx:id="loginTextField" layoutX="172.0" layoutY="82.0" />
+            <Button fx:id="enterButton" layoutX="99.0" layoutY="198.0" mnemonicParsing="false" text="Вход" />
+            <Button fx:id="exitButton" layoutX="269.0" layoutY="198.0" mnemonicParsing="false" text="Выйти" />
+            <Label fx:id="status" layoutX="185.0" layoutY="56.0" />
+            <PasswordField fx:id="passwordTextField" layoutX="172.0" layoutY="120.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
